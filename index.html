@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Document</title>
+</head>
+<body>
+
+    <script>
+        let marks = window.prompt("Enter your marks (0-100): ");
+        
+        if(Number(marks)<=100 && Number(marks)>=0) {
+            if(Number(marks) >= 90) {
+                document.write("<h2>Grade: A</h2>");
+            } else if(Number(marks) >= 80) {
+                document.write("<h2>Grade: B</h2>");
+            } else if(Number(marks) >= 70) {
+                document.write("<h2>Grade: C</h2>");
+            } else if(Number(marks) >= 60) {
+                document.write("<h2>Grade: D</h2>");
+            } else {
+                document.write("<h2>Grade: F</h2>");
+            }
+        } else {
+            document.write("Invalid marks entered. Please enter a number between 0 and 100.");
+        }
+
+    </script>
+    
+</body>
+</html>
